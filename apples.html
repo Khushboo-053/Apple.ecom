@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: black;
+            height: 70px;
+            text-align: center;
+            padding-top: 30px;
+        }
+        a{
+            color: white;
+            padding-left: 60px;
+            text-transform: capitalize;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: xx-large;
+            color: coral;
+            text-decoration: underline;
+            text-shadow: 2px blueviolet;
+            padding: 60px;
+            text-transform: uppercase;
+            word-spacing: 5px;
+            animation:fruit;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        @keyframes fruit{
+            from{
+               /* transform: translate(-160px);*/
+                text-shadow:0 0 20px royalblue ;
+                
+            }
+            to{
+              /*  transform: translate(-260px);*/
+                text-shadow: 0 0 30px blue,
+                           0 0 10px blue;
+                            
+                
+            }
+           
+        }
+             
+            
+           
+            
+        
+            
+        
+      .apples{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+         grid-column-gap: 20px;
+         grid-row-gap: 20px;
+         padding: 30px 20px;
+      }
+      .fruits img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            
+        }
+        .fruits img:hover{
+            transform: scale(1.1);
+        }
+        .fruits h4{
+            text-align: center;
+            padding: 5px;
+            text-transform: capitalize;
+        }
+        .fruits p{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            text-decoration: solid;
+            text-transform: capitalize;
+            color: burlywood;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-style: italic;
+            
+            
+        }
+
+        
+        
+        button{
+            background-color: green;
+            padding: 5px 3px;
+            border-radius: 4px;
+            display: block;
+            margin: 0  auto;
+            border: none;
+        }
+        button:hover{
+            background-color: chartreuse;;
+        }
+        .p{
+            display: flex;
+           justify-content: center;
+        }
+        .footer {
+          background-color: #333;
+          color: white;
+          padding: 40px 20px;
+          font-size: 16px;
+}
+
+    .footer-content {
+     display: flex;
+     justify-content: space-between;
+      flex-wrap: wrap;
+ }
+
+  .footer-section {
+      flex: 1;
+      margin: 20px;
+}
+
+   .footer-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+     .footer-section p {
+       color: #ccc;
+       line-height: 1.6;
+}
+
+
+
+
+
+     .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #bbb;
+}
+
+   .footer-bottom p {
+      margin: 0;
+}
+     @media  screen and (max-width:100px) {
+       .apples{
+         grid-template-columns: repeat(2,1fr);
+    }
+    
+} 
+     @media  screen and (max-width:728px) {
+        .apples{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+} 
+    
+    
+
+    </style>
+
+</head>
+<body>
+   
+    
+
+    
+<body>
+   
+<nav>
+    <a href="#">home</a>
+    <a href="#">business</a>
+    <a href="#">about</a>
+    <a href="#">contact</a>
+    <a href="#">shop</a>
+    
+</nav>
+<h1>fresh fruits available</h1>
+<section class="apples">
+    <div class="fruits">
+        <img src="striped.png">
+        <h4>striped apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+        
+    </div>
+    <div class="fruits">
+        <img src="golden.png">
+        <h4>golden apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+        
+    </div>
+    <div class="fruits">
+        <img src="shimla.png">
+        <h4>shimla apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+        
+    </div>
+    <div class="fruits">
+        <img src="ppp.jpg">
+        <h4> red delecious apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+        
+    </div>
+    <div class="fruits">
+        <img src="delecious.jpg">
+        <h4>delecious apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+        
+    </div>
+    <div class="fruits">
+        <img src="pic.png">
+        <h4>delecious apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+       
+    </div>
+    <div class="fruits">
+        <img src="green.png">
+        <h4>delecious apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+        
+    </div>
+    <div class="fruits">
+        <img src="fruit.png">
+        <h4>delecious apple</h4>
+        <p>Rs 450.00</p>
+        <button>buy now</button>
+    </div>
+   
+</section>
+<h2>deal of the day</h2>
+<div class="p">
+    <img src="shimla.png">
+</div>
+<h2>limited time offer<br>
+20% off for all apples for the next 48 hours</h2>
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>apple fruit co.-fresh from our orchard to Your table</p>
+      </div>
+      
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <p> <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+        : 6005815182</p>
+        <p><i class="fas fa-envelope fa-2x"></i> 
+        : khushbookhushiii130@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 apple valley harvest.
+         All rights reserved.</p>
+    </div>
+  </footer>
+
+           
+
+
+
+
+    
+</body>
+</html>
+</body>
+</html>
